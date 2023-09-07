@@ -1,0 +1,81 @@
+<html>
+    <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Patient Summary</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/patient_summary.css'>
+    <script src="time.js"></script>
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="navbar_bgd"></div>
+        <div class="bell_bgd">
+            <div class="bell_img">
+            </div>
+        </div>
+        <div class="nav_frame">
+            <!-- navbar links back to login for now, assign correct pathways -->
+            <a href="homepage.html"><span class="home_nav">Home</span></a>
+            <a href="login.html"><span class="sched_nav">Schedule</span></a>
+            <a href="login.html"><span class="resource_nav">Resources</span></a>
+            <a href="login.html"><span class="reports_nav">Reports</span></a>
+        </div>
+        <span class="logo_title">M</span><span class="logo_title_detail">ANAG</span><span class="logo_title">ED.</span>
+        <div class="logo"></div>
+
+        <!-- patient table in the body !-->
+        <div class="table_bgd">
+            <span class="table_title">Patient Summary</span>
+            <div class="line"></div>
+            <div class="btn_bgd_meal">
+                <!-- link this to Akira's patient meal page !-->
+                <a href="New_patient.html"><span class="btn_txt">Add Meal Plan</span></a>
+            </div>
+            <div class="btn_bgd_med">
+                <!-- link this to Akira's patient med page !-->
+                <a href="New_patient.html"><span class="btn_txt">Add Med Plan</span></a>
+            </div>
+            <!-- link this to php to return Patient Name here !-->
+            <span class="Patient_Name">Montgomery James</span>
+            <div class="time">
+                <span class="Current_time" id="time">Current Time:</span>
+            </div>
+            <!-- link this to php to return regimes on summary page respective of time and date !-->
+            <div class="date">
+                <span class="selected_date">Select Date:</span>
+                <input type="date" id="date" name="date">
+            </div>
+            <!-- link this to php to return regimes on summary page respective of time and date !-->
+            <div class="round">
+                <span class="selected_round">Select Round:</span>
+                <input type="time" id="round" name="round">
+            </div>
+            <!-- download csv of the table view !-->
+            <div class="tpt_tab_3"></div>
+            <div class="download_icon"></div>
+        </div>
+        <div class="panel"></div>
+        <!-- link this to php to return Patient photo in this panel !-->
+        <div class="Patient_table">
+            <table id = "Patient_table" border="1" cellpadding="5">
+                <tr>
+                    <th>D.O.B</th>
+                    <th>Sex</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Contact Name</th>
+                    <th>Contact No.</th>
+                    <th>D.Regime</th>
+                    <th>M.Regime</th>
+                    <th>Summary of Patient Status</th>
+                    <!-- link this to php to return patient status for exercise, meal and medicine closest to the viewed time !-->
+                </tr>
+            </table>
+        </div>
+        <!-- footer -->
+        <div id="footer_dynamic"></div>
+    </body>
+</html>

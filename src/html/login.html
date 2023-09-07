@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
+    <script src='../js/login.js'></script>
+</head>
+<body>    
+    <!-- navbar -->
+    <div class="bdy_bgd">
+        <div class="navbar_bgd"></div>
+        <!-- <div class="bell_bgd">
+            <div class="bell_img">
+            </div>
+        </div> -->
+        <div class="nav_frame">
+            <div class="name"></div>
+            <span class="home_nav">Home</span>
+            <span class="sched_nav">Schedule</span>
+            <span class="resource_nav">Resources</span>
+            <span class="reports_nav">Reports</span>
+        </div>
+        <span class="logo_title">M</span><span class="logo_title_detail">ANAG</span><span class="logo_title">ED.</span>
+        <div class="logo"></div>
+        
+        <!-- footer -->
+        <div class="footer"></div>
+
+        <!-- login panel + button -->
+        <div class="row clearfix">
+            <div class="">
+                <form id="login" name="login" method="POST" action="../php/selectRounds.php">
+                    <div class="panel"></div>
+                    <div class="line"></div>             
+                    <span class="title">Login</span>
+                    <!-- Username entry -->
+                    <span class="field_1_txt">Username</span>
+                    <input type="text" onchange="validation()" class="field_1" id="Username" name="Username" value="" required/>
+                    <div class= "messageUname" id="Uname_valid"></div>
+                    <div class="user_bgd"></div>
+                    <div class="user_img"></div>
+                    <!-- password -->
+                    <span class="field_2_txt">Password</span>
+                    <input type="password" onchange="validation()" class="field_2" id="Password" name="Password" value="" required/>
+                    <div class = "messagePwd" id="pwd_valid"></div>
+                    <div class="pass_bgd"></div>
+                    <div class="lock_img"></div>
+                    <div class="pass_bgd"></div>
+                    <div class="lock_img"></div>
+                    <input class="btn" onclick="Login()" type="submit" value="LOGIN" /><span class="btn_txt">LOGIN</span><!-- I think this can be removed because its useless same for its css counterpart -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

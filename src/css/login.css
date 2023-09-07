@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-size: 14px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.bdy_bgd {
+    width: 100%;
+    height: 1264px;
+    background: rgba(255,209,167,0.30000001192092896);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+/* NAV BAR STYLE */
+.navbar_bgd {
+    width: 110%;
+    height: 115px;
+    background: rgba(255,254,253,1);
+    opacity: 1;
+    position: relative;
+    top: -16px;
+    left: -28px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.bell_bgd {
+    width: 72px;
+    height: 53px;
+    background: rgba(148,36,29,1);
+    opacity: 1;
+    position: absolute;
+    top: 21px;
+    float:right;
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.bell_img {
+    width: 41px;
+    height: 38px;
+    background: url("../../images/bell.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 8px;
+    left: 16px;
+    overflow: hidden;
+}
+.nav_frame {
+    width: 525px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 29px;
+    opacity: 1;
+    position: relative;
+    top: -108px;
+    left: 565px;
+    overflow: hidden;
+}
+.name {
+    color: #fff;
+}
+.home_nav {
+    width: 120px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.sched_nav {
+    width: 120px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 107px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.resource_nav {
+    width: 120px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 256px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.reports_nav {
+    width: 120px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 405px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.logo_title {
+    width: 598px;
+    position: relative;
+    top: -175px;
+    left: 144px;
+    font-family: Montserrat;
+    font-weight: Bolder;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+    color: #94241D;
+}
+.logo_title_detail {
+    width: 598px;
+    position: relative;
+    top: -175px;
+    left: 144px;
+    font-family: Montserrat;
+    font-weight: Bolder;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+    color: #E69859;
+}
+.logo {
+    width: 79px;
+    height: 72px;
+    background: url("../../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: -230px;
+    left: 54px;
+    overflow: hidden;
+}
+
+/* FOOTER BAR */
+.footer {
+    width: 120%;
+    height: 72px;
+    background: rgba(0,0,0,0.6499999761581421);
+    opacity: 1;
+    position: absolute;
+    top: 1192px;
+    left: -16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+/* LOGIN PANEL ELEMENTS */
+.panel {
+    width: 735px;
+    height: 765px;
+    background: rgba(148,36,28,0.699999988079071);
+    opacity: 1;
+    position: absolute;
+    top: 246px;
+    left: 275px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+.field_1 {
+    width: 317px;
+    height: 52px;
+    background: rgba(255,255,255,0.8999999761581421);
+    opacity: 1;
+    position: absolute;
+    top: 558px;
+    left: 510px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    padding-left: 50px;
+    border-color: transparent;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+.field_1_txt {
+    width: 120px;
+    color: rgba(249,243,241,1);
+    position: absolute;
+    top: 512px;
+    left: 490px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.messageUname {
+    width: 330px;
+    font-family: Montserrat;
+    position: absolute;
+    top: 620px;
+    left: 490px;
+}
+.title {
+    width: 735px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 313px;
+    left: 282px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 55px;
+    opacity: 1;
+    text-align: center;
+}
+.user_bgd {
+    width: 57px;
+    height: 52px;
+    background: rgba(230,152,89,1);
+    opacity: 1;
+    position: absolute;
+    top: 558px;
+    left: 490px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.user_img {
+    width: 34px;
+    height: 33px;
+    background: url("../../images/user.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 566px;
+    left: 503px;
+    overflow: hidden;
+}
+.field_2 {
+    width: 317px;
+    height: 52px;
+    background: rgba(255,255,255,0.8999999761581421);
+    opacity: 1;
+    position: absolute;
+    top: 699px;
+    left: 510px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    padding-left: 50px;
+    border-color: transparent;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+.field_2_txt {
+    width: 120px;
+    color: rgba(249,243,241,1);
+    position: absolute;
+    top: 653px;
+    left: 490px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.messagePwd {
+    width: 330px;
+    font-family: Montserrat;
+    position: absolute;
+    top: 763px;
+    left: 490px;
+}
+.pass_bgd {
+    width: 57px;
+    height: 52px;
+    background: rgba(230,152,89,1);
+    opacity: 1;
+    position: absolute;
+    top: 699px;
+    left: 490px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.lock_img {
+    width: 34px;
+    height: 36px;
+    background: url("../../images/lock.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 707px;
+    left: 503px;
+    overflow: hidden;
+}
+.name {
+    color: #fff;
+}
+.btn {
+    width: 166px;
+    height: 53px;
+    background: rgba(230,152,89,1);
+    opacity: 1;
+    position: absolute;
+    top: 840px;
+    left: 560px;
+    border-color: transparent;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.247);
+    overflow: hidden;
+}
+.btn_txt {
+    width: 368px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: center;
+}
+.line {
+    position: absolute;
+    width: 76px;
+    height: 0px;
+    left: 610px;
+    top: 448px;
+    
+    border: 4px solid #FDAB61;
+}
+/* Format the error codes to be green or red depending on validation status*/
+.black {
+    color:rgb(0, 0, 0);
+}
+.white {
+    color: rgb(255, 255, 255);
+}

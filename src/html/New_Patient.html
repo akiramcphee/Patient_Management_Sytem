@@ -1,0 +1,90 @@
+<html>
+    <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Patient Rego Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Patient_rego.css'>
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="navbar_bgd"></div>
+        <div class="bell_bgd">
+            <div class="bell_img">
+            </div>
+        </div>
+        <div class="nav_frame">
+            <div class="name"></div>
+            <!-- navbar links back to login for now, assign correct pathways -->
+            <a href="homepage.html"><span class="home_nav">Home</span></a>
+            <a href="login.html"><span class="sched_nav">Schedule</span></a>
+            <a href="login.html"><span class="resource_nav">Resources</span></a>
+            <a href="login.html"><span class="reports_nav">Reports</span></a>
+        </div>
+        <span class="logo_title">M</span><span class="logo_title_detail">ANAG</span><span class="logo_title">ED.</span>
+        <div class="logo"></div>
+        <div>
+            <form id="registration" name="registration" method="POST" action="../php/regSuccess.php">
+                <div class="panel"></div>
+                <div class="line"></div>             
+                <span class="title">Register New Patient</span>
+                <div class ="Exit">  <!-- cross on form to exit registration back to home -->
+                    <a href="homepage.html"><img src="../../images/cross.png" style="width:34px;height:33px;"></a>
+                </div>
+                <!-- First Name -->
+                <span class="fname">First Name</span>
+                <!-- Have to add JS for validation and error messages on all these fields -->
+                <input type="text" onchange="validation()" class="fname_field" id="fname" name="fname" value="" required/>
+                <div class= "messagefname" id="fname_valid"></div>
+                <!-- Last Name -->
+                <span class="lname">Last Name</span>
+                <input type="text" onchange="validation()" class="lname_field" id="lname" name="lname" value="" required/>
+                <div class = "messagelname" id="lname_valid"></div>
+                <!-- DOB -->
+                <span class="DOB">D.O.B</span>
+                <input type="text" onchange="validation()" class="DOB_field" id="DOB" name="DOB" value="" required/>
+                <div class = "messageDOB" id="DOB_valid"></div>
+                <!-- Sex -->
+                <span class="sex">Sex</span>
+                <input type="text" onchange="validation()" class="sex_field" id="sex" name="sex" value="" required/>
+                <div class = "messagesex" id="sex_valid"></div>
+                <!-- Email -->
+                <span class="email">Email</span>
+                <input type="text" onchange="validation()" class="email_field" id="email" name="email" value="" required/>
+                <div class = "messageemail" id="email_valid"></div>
+                <!-- Phone Number -->
+                <span class="phone">Phone Number</span>
+                <input type="text" onchange="validation()" class="phone_field" id="phone" name="phone" value="" required/>
+                <div class = "messagephone" id="phone_valid"></div>
+                <!-- Address -->
+                <span class="address">Address</span>
+                <input type="text" onchange="validation()" class="address_field" id="address" name="address" value="" required/>
+                <div class = "messageaddress" id="address_valid"></div>
+                <!-- Emergency Contact Name -->
+                <span class="emergency_name">Emergency Contact Name</span>
+                <input type="text" onchange="validation()" class="emergency_name_field" id="emergency_name" name="emergency_name" value="" required/>
+                <div class = "messageemergency_name" id="emergency_name_valid"></div>
+                <!-- Emergency Contact Number -->
+                <span class="emergency">Emergency Contact Phone Number</span>
+                <input type="text" onchange="validation()" class="emergency_field" id="emergency" name="emergency" value="" required/>
+                <div class = "messageemergency" id="emergency_valid"></div>
+                <!-- Weight -->
+                <span class="weight">Weight (kg)</span>
+                <input type="text" onchange="validation()" class="weight_field" id="weight" name="weight" value="" required/>
+                <div class = "messageweight" id="weight_valid"></div>
+                <!-- Allergies -->
+                <span class="allergies">Allergies</span>
+                <input type="text" onchange="validation()" class="allergies_field" id="allergies" name="allergies" value="" required/>
+                <div class = "messageallergies" id="allergies_valid"></div>
+                <!-- Room Allocation -->
+                <span class="room">Room Allocation</span>
+                <input type="text" onchange="validation()" class="room_field" id="room" name="room" value="" required/>
+                <div class = "messageroom" id="allergies_room"></div>
+
+                <input class="btn" onclick="Login()" type="submit" value="SUBMIT"/>
+        </div>
+        <!-- footer -->
+        <div id="footer_dynamic"></div>
+    </body>
+    </html>
